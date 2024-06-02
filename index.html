@@ -7,38 +7,63 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="manager">
-        <h1>To-Do List</h1>
-        <div class="input-section">
-          <form>
-            <textarea
-              style="
-                resize: none;
-                width: 260px;
-                height: 150px;
-                font-size: 16px;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-              "
-              rows="5"
-              cols="33"
-              id="taskInput"
-              placeholder="Enter task..."
-            ></textarea>
-          </form>
-          <!-- <input type="text" id="taskInput" placeholder="Title" /> -->
-          <button onclick="addTask()">Add Task</button>
+    <div class="main_div">
+      <div class="container">
+        <div class="manager">
+          <h1>To-Do List</h1>
+          <div class="input-section">
+            <form>
+              <textarea
+                style="
+                  resize: none;
+                  width: 280px;
+                  height: 150px;
+                  font-size: 16px;
+                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                "
+                rows="5"
+                cols="33"
+                id="taskInput"
+                placeholder="Enter task..."
+              ></textarea>
+            </form>
+            <button onclick="addTask()">Add Task</button>
+          </div>
+        </div>
+        <div class="task-manager">
+          <div class="pending">
+            <h2 style="text-align: center; margin-bottom: 10px">
+              Pending Tasks
+            </h2>
+            <ul id="pendingTasksList" class="task-list"></ul>
+          </div>
+          <div class="completed-task">
+            <h2 style="text-align: center; margin-bottom: 10px">
+              Completed Tasks
+            </h2>
+            <ul id="completedTasksList" class="task-list"></ul>
+          </div>
         </div>
       </div>
-      <div class="task-manager">
-        <div class="pending">
-          <h2 style="text-align: center">Pending Tasks</h2>
-          <ul id="pendingTasksList" class="task-list"></ul>
-        </div>
-        <div class="completed-task">
-          <h2 style="text-align: center">Completed Tasks</h2>
-          <ul id="completedTasksList" class="task-list"></ul>
-        </div>
+      <div>
+        <footer>
+          <img
+            width="14"
+            height="14"
+            src="https://img.icons8.com/ios/50/000000/info--v1.png"
+            alt="info--v1"
+          />
+          <p
+            style="
+              font-size: 14px;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              padding-left: 5px;
+              padding-bottom: 3px;
+            "
+          >
+            Made By Sudip Halder
+          </p>
+        </footer>
       </div>
     </div>
 
